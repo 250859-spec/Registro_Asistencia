@@ -1,0 +1,90 @@
+// Autor: Paola Franco Gregorio
+// Matrícula: 250859
+// Grupo: 4C DSM
+// Fecha: 05/10/2026
+
+
+
+fun main() {
+
+    println("Paola Franco Gregorio 250859")
+
+    val appPFG = "Instagram"
+    val categoriaPFG = "Red social"
+    val pantallaPFG = "Inicio o Feed"
+    val colorPrimarioPFG = "#0B0F14"
+    val colorAcentoPFG = "#E1306C"
+    val tipografiaPFG = "Sans Serif"
+    val basePFG = 16
+
+    println("\nAplicación: $appPFG")
+    println("Categoría: $categoriaPFG")
+    println("Pantalla analizada: $pantallaPFG")
+    println("Color primario: $colorPrimarioPFG")
+    println("Color de acento: $colorAcentoPFG")
+    println("Tipografía: $tipografiaPFG")
+    println("Tamaño base de letra: ${basePFG}px")
+
+    println("****** ESCALA TIPOGRÁFICA *******")
+
+    var tamanoPFG = basePFG
+
+    for (nivelPFG in 1..5) {
+        println("Nivel $nivelPFG: ${tamanoPFG}px")
+        tamanoPFG = tamanoPFG * 5 / 4
+    }
+
+    val etiquetasPFG = 12
+    val cuadrosTextoPFG = 0
+    val botonesPFG = 12
+    val imagenesPFG = 8
+    val listasPFG = 1
+    val barrasPFG = 2
+    val menusPFG = 1
+
+    var totalPFG = 0
+
+    println("****** INVENTARIO DE CONTROLES ******")
+
+    println("Etiquetas: $etiquetasPFG")
+    totalPFG = totalPFG + etiquetasPFG
+
+    println("Cuadros de texto: $cuadrosTextoPFG")
+    totalPFG = totalPFG + cuadrosTextoPFG
+
+    println("Botones: $botonesPFG")
+    totalPFG = totalPFG + botonesPFG
+
+    println("Imágenes: $imagenesPFG")
+    totalPFG = totalPFG + imagenesPFG
+
+    println("Listas: $listasPFG")
+    totalPFG = totalPFG + listasPFG
+
+    println("Barras de herramientas: $barrasPFG")
+    totalPFG = totalPFG + barrasPFG
+
+    println("Menús: $menusPFG")
+    totalPFG = totalPFG + menusPFG
+
+    println("Total de controles: $totalPFG")
+
+    val densidadPFG = if (totalPFG < 8) {
+        "Interfaz ligera"
+    } else if (totalPFG <= 15) {
+        "Interfaz equilibrada"
+    } else {
+        "Interfaz densa"
+    }
+    println("========================")
+    println("Densidad: $densidadPFG")
+    println("========================")
+
+    val entradasPFG = cuadrosTextoPFG + botonesPFG
+    val porcentajePFG = entradasPFG * 100.0 / totalPFG
+
+    println("Controles de entrada: $entradasPFG")
+    println("Porcentaje de controles de entrada: $porcentajePFG%")
+
+    println("\nCódigo de verificación: $totalPFG-$basePFG-PFG")
+}
